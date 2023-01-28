@@ -81,7 +81,7 @@ border: 1px solid #ffffff;
     font-weight: 100;
     line-height: 25px;
 }
-button{
+.btn__tg{
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -118,9 +118,15 @@ span{
     z-index: -1;
     transition: 0.5s;
 }
-button:hover span{
+.btn__tg:hover span{
     width: 100%;
 }
-button:hover {
+.btn__insta:hover span{
+    width: 100%;
+}
+.btn__tg:hover {    
+    border: none;
+}
+.btn__insta:hover {
     border: none;
 }
