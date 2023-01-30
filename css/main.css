@@ -35,15 +35,15 @@
     display: inline-block;
     margin: 0 20px;
 }
-.header__list_item a{
+.header__list{
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
 }
-.header__list_item a:hover{
+.header__list:hover{
     color: #FFC700;
 }
-.header__list_item a:active{
+.header__list:active{
     color: yellow;
 }
 .tel__button{
@@ -52,7 +52,7 @@ height: 35px;
 background: #FFC700;
 border-radius: 15px;
 }
-.tel__button a{
+.tel__button_list{
     font-weight: 700;
     text-decoration: none;
     color: #ffffff;
@@ -92,6 +92,8 @@ border: 1px solid #ffffff;
     background: transparent;
     color: #ffffff;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 .btn__insta{
     width: 200px;
