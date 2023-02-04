@@ -4,37 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./css/main.css">
     <title>D.Nur</title>
 </head>
 <body>
-   <header>
-    <div class="banner1">
+  <header>
+  <div class="banner1">
      <div class="container">
-       <div class="navbar">
-        <img src="./images/copy_logo.svg"D.NUR">
-        <ul class="header__ul">
-          <li class="header__list_item"><a class="header__list"  href="#">О школе</a></li>
-          <li class="header__list_item"><a class="header__list"  href="#">Команда</a></li>
-          <li class="header__list_item"><a class="header__list"  href="#">Цены</a></li>
-          <li class="header__list_item"><a class="header__list"  href="#">Наши курсы</a></li>
-        </ul>
-        <button class="tel__button"><a class="tel__button_list" href="#">+998 99 999 99 99</a></button>
-       </div>
-       <hr class="hr1">
-       <section class="information">
-        <h1 class="information__h1">Об учебном центре</h1>
-        <p class="information__section1_p">Учебный центр D.Nur был основан 2018 году и находится на очень удобной локации. На данный момент выпустил более 500 учеников. Сам центр оборудован современной мебелью и учебными материалами. Обучение ведётся по специальной программе, которую легко осваивают дети. Учебный центр D.Nur обращает большое внимание на раннее развитие детей и на ранний интерес детей к английскому языку с американской программой Scholastic и Learning Resources, в которых есть множество практических обучающих игрушек для детей всех возрастов.</p>
-        <button class="btn__tg"><span></span> Наш Telegram</button>
-        <button class="btn__insta"><span></span> Наш Instagram </button>
-      </section>
-    </div>
+      <nav class="navbar bg-white w-100 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img  class="logo" src="./images/logo.PNG" alt="logo D.Nur"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="logo" src="./images/logo.PNG" alt=""></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link " href="#">
+                    Dropdown
+                  </a>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-outline-warning">+998 99 999 99 99</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      </div>
+      <div class="container">
+        <section class="information">
+         <h1 class="information__h1">Об учебном центре</h1>
+         <p class="information__section1_p">Учебный центр D.Nur был основан 2018 году и находится на очень удобной локации. На данный момент выпустил более 500 учеников. Сам центр оборудован современной мебелью и учебными материалами. Обучение ведётся по специальной программе, которую легко осваивают дети. Учебный центр D.Nur обращает большое внимание на раннее развитие детей и на ранний интерес детей к английскому языку с американской программой Scholastic и Learning Resources, в которых есть множество практических обучающих игрушек для детей всех возрастов.</p>
+         <button class="btn__tg"><span></span> Наш Telegram</button>
+         <button class="btn__insta"><span></span> Наш Instagram </button>
+       </section>
+      </div>
   </div>
 </header> 
 <main>
-  <h2 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi ad porro delectus sed iste dolores, magni ipsum recusandae veritatis voluptatem modi assumenda, architecto numquam tenetur, accusantium cum magnam voluptas.</h2>
-        </main>
+  <section class="section2">
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <img src="./images/information1.PNG" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/information2.PNG" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/information3.PNG" class="d-block" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon text-end" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
         <footer></footer>
+        <script src="./js/bootstrap.min.js"></script>
    <script src="./js/main.js"></script>
 </body>
 </html>
